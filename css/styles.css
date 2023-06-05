@@ -723,13 +723,13 @@ height: 100%;
 margin-top: 0px;
 margin-bottom: 0px;
 padding: 40px 32px; 
-background: #4D5AE5;
+background: var(--accent-color);
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
 line-height: 24px;
 letter-spacing: 0.02em;
-color: #F4F4FD;
+color: var(--client-logo);
 overflow: auto;
 transform: translate(0px, 100%);
 transition: transform var(--funktion);
@@ -857,7 +857,7 @@ transition: fill var(--funktion)
 /* + */
 .modal-form-input-icon {
     position: absolute;
-    fill: #2E2F42;
+    fill: var(--client-logo);
     top: 50%;
     left: 16px;
     transform: translateY(-50%);
@@ -943,6 +943,12 @@ transition: fill var(--funktion)
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
     margin-right: 8px;
+    cursor: pointer;
+
+    transition: 
+    background-color var(--funktion), 
+    border var(--funktion),
+    fill var(--funktion);
 }
 
 .visually-hidden{
