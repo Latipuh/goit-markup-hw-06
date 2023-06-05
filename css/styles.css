@@ -529,7 +529,7 @@ display: flex;
     display: flex;
 }
 
-.footer-form-wrapper {
+.footer-form {
     display: flex;
     gap: 24px;
 
@@ -586,6 +586,7 @@ display: flex;
     letter-spacing: 0.04em;
     color: #FFFFFF;
     transition: background-color var(--transition-duration-and-func);
+    cursor: pointer;
 }
 
 
@@ -845,7 +846,7 @@ transition: fill var(--funktion)
     background-color: transparent;
     padding-left: 38px;
     outline: transparent;
-    transition: border-color var(--transition-duration-and-func);
+    transition: border-color var(--funktion);
 }
 
 /* + */
@@ -860,7 +861,7 @@ transition: fill var(--funktion)
     top: 50%;
     left: 16px;
     transform: translateY(-50%);
-    transition: fill var(--transition-duration-and-func);
+    transition: fill var(--funktion);
 
 }
 
@@ -889,7 +890,7 @@ transition: fill var(--funktion)
     border-radius: 4px;
     background-color: transparent;
     outline: transparent;
-    transition: border-color var(--transition-duration-and-func);
+    transition: border-color var(--funktion);
 }
 
 /* + */
@@ -944,9 +945,9 @@ transition: fill var(--funktion)
     margin-right: 8px;
 }
 
-
-
-
+.visually-hidden{
+visibility: hidden;
+}
 
 .modal-form-submit {
     min-width: 169px;
@@ -965,12 +966,13 @@ transition: fill var(--funktion)
     border-radius: 4px;
     border: none;
 
-
-    transition: background-color var(--transition-duration-and-func);
+    cursor: pointer;
+    transition: background-color var(--funktion);
 
 }
 
 .modal-form-submit:hover,
 .modal-form-submit:focus {
     background-color: var(--accent-color);
+    
 }
